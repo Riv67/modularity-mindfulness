@@ -31,6 +31,7 @@ nav ul {
   display: flex;
   justify-content: center;
 }
+
 nav a {
     color: #3783a3;
 }
@@ -66,7 +67,7 @@ h2 {
 .Intro {
   border-top: .2rem solid #e2e2e2;
   border-bottom: .2rem solid #e2e2e2;
-  max-width: 30em;
+
   text-align: center;
   padding: 1rem;
 }
@@ -95,4 +96,23 @@ article a {
 main {
   margin: 0 0 1.5rem;
   padding: 0 1rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    align-items: flex-start;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
 }
